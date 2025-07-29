@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Tue Jul 29 07:40:50 2025
+[*]
+[dumpfile] "D:\verilog\adder\adder16.vcd"
+[dumpfile_mtime] "Tue Jul 29 07:39:47 2025"
+[dumpfile_size] 951
+[savefile] "D:\verilog\adder\output"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-3.921819 12 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_full_adder_16bit.
+[sst_width] 197
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@22
+test_full_adder_16bit.uut.a[15:0]
+test_full_adder_16bit.uut.b[15:0]
+@28
+test_full_adder_16bit.uut.c_in
+test_full_adder_16bit.uut.c_out
+@23
+test_full_adder_16bit.uut.sum[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

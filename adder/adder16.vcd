@@ -1,0 +1,71 @@
+$date
+	Tue Jul 29 13:09:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_full_adder_16bit $end
+$var wire 1 ! c_out $end
+$var wire 16 " sum [15:0] $end
+$var reg 16 # a [15:0] $end
+$var reg 16 $ b [15:0] $end
+$var reg 1 % c_in $end
+$scope module uut $end
+$var wire 16 & a [15:0] $end
+$var wire 16 ' b [15:0] $end
+$var wire 1 ( c_in $end
+$var wire 1 ! c_out $end
+$var wire 16 ) sum [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 )
+0(
+b1 '
+b1 &
+0%
+b1 $
+b1 #
+b10 "
+0!
+$end
+#10
+b0 "
+b0 )
+1!
+b1111111111111111 #
+b1111111111111111 &
+#20
+b101010101010110 "
+b101010101010110 )
+0!
+1%
+1(
+b100001100100001 $
+b100001100100001 '
+b1001000110100 #
+b1001000110100 &
+#30
+b1011111000000001 "
+b1011111000000001 )
+0%
+0(
+b1001000110100 $
+b1001000110100 '
+b1010101111001101 #
+b1010101111001101 &
+#40
+b1 "
+b1 )
+1%
+1(
+b0 $
+b0 '
+b0 #
+b0 &
+#50
