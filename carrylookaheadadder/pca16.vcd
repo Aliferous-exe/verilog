@@ -1,0 +1,80 @@
+$date
+	Fri Aug 01 19:49:12 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_parallel_carry_adder_16bit $end
+$var wire 1 ! c_out $end
+$var wire 16 " sum [15:0] $end
+$var reg 16 # a [15:0] $end
+$var reg 16 $ b [15:0] $end
+$var reg 1 % c_in $end
+$scope module uut $end
+$var wire 16 & a [15:0] $end
+$var wire 16 ' b [15:0] $end
+$var wire 1 ( c_in $end
+$var reg 1 ) c_out $end
+$var reg 16 * sum [15:0] $end
+$var reg 17 + temp [16:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 +
+b10 *
+0)
+0(
+b1 '
+b1 &
+0%
+b1 $
+b1 #
+b10 "
+0!
+$end
+#10
+1)
+1!
+b0 *
+b0 "
+b10000000000000000 +
+b1111111111111111 #
+b1111111111111111 &
+#20
+0)
+0!
+b101010101010110 *
+b101010101010110 "
+b101010101010110 +
+1%
+1(
+b100001100100001 $
+b100001100100001 '
+b1001000110100 #
+b1001000110100 &
+#30
+b1111111111111111 *
+b1111111111111111 "
+b1111111111111111 +
+0%
+0(
+b101010101010101 $
+b101010101010101 '
+b1010101010101010 #
+b1010101010101010 &
+#40
+b1 *
+b1 "
+b1 +
+1%
+1(
+b0 $
+b0 '
+b0 #
+b0 &
+#50
