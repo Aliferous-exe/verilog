@@ -1,0 +1,72 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_012A93C8 .scope module, "and_gate" "and_gate" 2 2;
+ .timescale 0 0;
+L_012A3B60 .functor AND 1, C4<z>, C4<z>, C4<1>, C4<1>;
+v012A3A58_0 .net "a", 0 0, C4<z>; 0 drivers
+v012A3AB0_0 .net "b", 0 0, C4<z>; 0 drivers
+v012A3B08_0 .net "y", 0 0, L_012A3B60; 1 drivers
+S_012A8F88 .scope module, "nand_gate" "nand_gate" 2 22;
+ .timescale 0 0;
+L_01132088 .functor NAND 1, C4<z>, C4<z>, C4<1>, C4<1>;
+v012AD8C8_0 .net "a", 0 0, C4<z>; 0 drivers
+v012AD920_0 .net "b", 0 0, C4<z>; 0 drivers
+v012ADC38_0 .net "y", 0 0, L_01132088; 1 drivers
+S_012A94D8 .scope module, "nor_gate" "nor_gate" 2 27;
+ .timescale 0 0;
+L_011320C0 .functor NOR 1, C4<z>, C4<z>, C4<0>, C4<0>;
+v012ADBE0_0 .net "a", 0 0, C4<z>; 0 drivers
+v012AD978_0 .net "b", 0 0, C4<z>; 0 drivers
+v012ADB30_0 .net "y", 0 0, L_011320C0; 1 drivers
+S_012A9CD0 .scope module, "not_gate" "not_gate" 2 12;
+ .timescale 0 0;
+L_011320F8 .functor NOT 1, C4<z>, C4<0>, C4<0>, C4<0>;
+v012ADDF0_0 .net "a", 0 0, C4<z>; 0 drivers
+v012AD7C0_0 .net "y", 0 0, L_011320F8; 1 drivers
+S_012A9010 .scope module, "or_gate" "or_gate" 2 7;
+ .timescale 0 0;
+L_01132130 .functor OR 1, C4<z>, C4<z>, C4<0>, C4<0>;
+v012ADE48_0 .net "a", 0 0, C4<z>; 0 drivers
+v012ADD98_0 .net "b", 0 0, C4<z>; 0 drivers
+v012ADA80_0 .net "y", 0 0, L_01132130; 1 drivers
+S_012A9B38 .scope module, "tb_all_gates" "tb_all_gates" 3 3;
+ .timescale -9 -12;
+L_01132168 .functor AND 1, v012ADEA0_0, v012ADC90_0, C4<1>, C4<1>;
+v012ADEA0_0 .var "a", 0 0;
+v012ADC90_0 .var "b", 0 0;
+v012ADCE8_0 .net "y", 0 0, L_01132168; 1 drivers
+S_012A9670 .scope module, "xor_gate" "xor_gate" 2 17;
+ .timescale 0 0;
+L_011321A0 .functor XOR 1, C4<z>, C4<z>, C4<0>, C4<0>;
+v012ADEF8_0 .net "a", 0 0, C4<z>; 0 drivers
+v012ADAD8_0 .net "b", 0 0, C4<z>; 0 drivers
+v012AD9D0_0 .net "y", 0 0, L_011321A0; 1 drivers
+    .scope S_012A9B38;
+T_0 ;
+    %vpi_call 3 11 "$dumpfile", "gate.vcd";
+    %vpi_call 3 12 "$dumpvars", 1'sb0, S_012A9B38;
+    %set/v v012ADEA0_0, 0, 1;
+    %set/v v012ADC90_0, 0, 1;
+    %delay 10000, 0;
+    %set/v v012ADEA0_0, 0, 1;
+    %set/v v012ADC90_0, 1, 1;
+    %delay 10000, 0;
+    %set/v v012ADEA0_0, 1, 1;
+    %set/v v012ADC90_0, 0, 1;
+    %delay 10000, 0;
+    %set/v v012ADEA0_0, 1, 1;
+    %set/v v012ADC90_0, 1, 1;
+    %delay 10000, 0;
+    %vpi_call 3 19 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "gates.v";
+    "tb_all_gates.v";
