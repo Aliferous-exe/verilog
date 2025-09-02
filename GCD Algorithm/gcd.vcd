@@ -1,0 +1,390 @@
+$date
+	Tue Sep 02 23:02:30 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module gcd_test $end
+$var wire 16 ! Aout [15:0] $end
+$var wire 16 " Bout [15:0] $end
+$var wire 1 # done $end
+$var wire 1 $ eq $end
+$var wire 1 % gt $end
+$var wire 1 & ldA $end
+$var wire 1 ' ldB $end
+$var wire 1 ( lt $end
+$var wire 1 ) selA_sub $end
+$var wire 1 * selB_sub $end
+$var reg 1 + clk $end
+$var reg 16 , data_in [15:0] $end
+$var reg 1 - reset $end
+$var reg 1 . start $end
+$scope module DP $end
+$var wire 16 / Aout [15:0] $end
+$var wire 16 0 Bout [15:0] $end
+$var wire 1 1 clk $end
+$var wire 16 2 data_in [15:0] $end
+$var wire 1 $ eq $end
+$var wire 1 % gt $end
+$var wire 1 & ldA $end
+$var wire 1 ' ldB $end
+$var wire 1 ( lt $end
+$var wire 1 ) selA_sub $end
+$var wire 1 * selB_sub $end
+$var wire 16 3 subAB [15:0] $end
+$var wire 16 4 subBA [15:0] $end
+$var reg 16 5 A [15:0] $end
+$var reg 16 6 B [15:0] $end
+$upscope $end
+$scope module CON $end
+$var wire 1 1 clk $end
+$var wire 1 $ eq $end
+$var wire 1 % gt $end
+$var wire 1 ( lt $end
+$var wire 1 7 reset $end
+$var wire 1 8 start $end
+$var reg 1 9 done $end
+$var reg 1 : ldA $end
+$var reg 1 ; ldB $end
+$var reg 1 < selA_sub $end
+$var reg 1 = selB_sub $end
+$var reg 3 > state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 >
+0=
+0<
+0;
+0:
+09
+08
+17
+bx 6
+bx 5
+bx 4
+bx 3
+b0 2
+01
+bx 0
+bx /
+0.
+1-
+b0 ,
+0+
+0*
+0)
+x(
+0'
+0&
+x%
+x$
+0#
+bx "
+bx !
+$end
+#5
+1+
+11
+#7
+1.
+18
+b110000 ,
+b110000 2
+0-
+07
+#10
+0+
+01
+#15
+1:
+1&
+b1 >
+1+
+11
+#17
+0.
+08
+#20
+0+
+01
+#25
+1;
+1'
+0:
+0&
+b10 >
+b110000 5
+b110000 !
+b110000 /
+1+
+11
+#27
+b10010 ,
+b10010 2
+#30
+0+
+01
+#35
+0;
+0'
+b11 >
+b10010 6
+b11110 3
+b1111111111100010 4
+0(
+1%
+0$
+b10010 "
+b10010 0
+1+
+11
+#40
+0+
+01
+#45
+1<
+1)
+1:
+1&
+b100 >
+1+
+11
+#50
+0+
+01
+#55
+0<
+0)
+0:
+0&
+b11 >
+b11110 5
+b1100 3
+b1111111111110100 4
+b11110 !
+b11110 /
+1+
+11
+#60
+0+
+01
+#65
+1<
+1)
+1:
+1&
+b100 >
+1+
+11
+#70
+0+
+01
+#75
+0<
+0)
+0:
+0&
+b11 >
+b1100 5
+b1111111111111010 3
+b110 4
+1(
+0%
+b1100 !
+b1100 /
+1+
+11
+#80
+0+
+01
+#85
+1=
+1*
+1;
+1'
+b101 >
+1+
+11
+#90
+0+
+01
+#95
+0=
+0*
+0;
+0'
+b11 >
+b110 6
+b110 3
+b1111111111111010 4
+0(
+1%
+b110 "
+b110 0
+1+
+11
+#100
+0+
+01
+#105
+1<
+1)
+1:
+1&
+b100 >
+1+
+11
+#110
+0+
+01
+#115
+0<
+0)
+0:
+0&
+b11 >
+b110 5
+b0 3
+b0 4
+0%
+1$
+b110 !
+b110 /
+1+
+11
+#120
+0+
+01
+#125
+19
+1#
+b110 >
+1+
+11
+#130
+0+
+01
+#135
+1+
+11
+#140
+0+
+01
+#145
+1+
+11
+#150
+0+
+01
+#155
+1+
+11
+#160
+0+
+01
+#165
+1+
+11
+#170
+0+
+01
+#175
+1+
+11
+#180
+0+
+01
+#185
+1+
+11
+#190
+0+
+01
+#195
+1+
+11
+#200
+0+
+01
+#205
+1+
+11
+#210
+0+
+01
+#215
+1+
+11
+#220
+0+
+01
+#225
+1+
+11
+#230
+0+
+01
+#235
+1+
+11
+#240
+0+
+01
+#245
+1+
+11
+#250
+0+
+01
+#255
+1+
+11
+#260
+0+
+01
+#265
+1+
+11
+#270
+0+
+01
+#275
+1+
+11
+#280
+0+
+01
+#285
+1+
+11
+#290
+0+
+01
+#295
+1+
+11
+#300
+0+
+01
+#305
+1+
+11
+#310
+0+
+01
+#315
+1+
+11
+#320
+0+
+01
+#325
+1+
+11
+#327
